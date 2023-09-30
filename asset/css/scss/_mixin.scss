@@ -1,0 +1,15 @@
+@mixin contents_width{
+    max-width: $max_page_width;
+    padding: 0 $common_padding 0;    
+}
+
+@mixin hamburger_line{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color:$text_color;
+    left:50%;
+    transform:translateX(-50%);
+    border-radius: 30px;
+}

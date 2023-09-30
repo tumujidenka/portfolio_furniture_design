@@ -1,0 +1,45 @@
+.header{
+    height: 80px;
+    @include contents_width();
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    &__logo{
+        line-height: 80px;
+        height: 80px;
+        width:180px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        transition:opacity .3s;
+    }
+    &__logo:hover{
+        opacity: $common_opacity;
+    }
+    
+    &__hamburger-menu{
+        background-color: white;
+        width: 30px;
+        height:30px;
+        cursor: pointer;
+        position: relative;
+        &--upper-line{
+            @include hamburger_line();
+            top:10px;
+        }
+        &--lower-line{
+            @include hamburger_line();
+            bottom:10px;
+        }
+    }
+}
+
+.navigation{
+
+}
+
+
+
+
