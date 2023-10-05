@@ -4,6 +4,7 @@
   left: 0;
   height: 80px;
   width: 100%;
+  z-index: 1;
   background-color: #fff;
 }
 
@@ -122,6 +123,7 @@
 
 .contents {
   overflow: hidden;
+  transition: opacity 0.4s;
 }
 .contents__figcontainer {
   width: 100%;
@@ -136,6 +138,10 @@
   margin-top: 10px;
   font-size: 12px;
   line-height: 20px;
+}
+
+.contents:hover {
+  opacity: 0.6;
 }
 
 @media (max-width: 900px) {
@@ -168,10 +174,102 @@
   margin-top: 80px;
 }
 .main__viewmore {
+  display: block;
   padding-top: 45px;
   text-align: center;
   height: 190px;
   font-size: 14px;
+}
+
+.product {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+}
+.product__headline {
+  width: 1360px;
+  max-width: 100%;
+  padding: 0 40px 0;
+  margin: 0 auto;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+.product__pagination {
+  width: 1360px;
+  max-width: 100%;
+  padding: 0 40px 0;
+  margin: 0 auto;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  margin-bottom: 13 0px;
+}
+.pages > li:nth-child(1) {
+  margin-right: 20px;
+  text-align: center;
+}
+.pages > li:nth-child(2) {
+  margin-left: 20px;
+  text-align: center;
+}
+.pages__page {
+  font-size: 14px;
+  font-weight: normal;
+}
+.pages__page > a {
+  transition: opacity 0.3s;
+}
+.pages__page > a:hover {
+  opacity: 0.6;
+}
+
+.about {
+  width: 1360px;
+  max-width: 100%;
+  padding: 0 40px 0;
+  margin: 0 auto;
+  margin-top: 120px;
+  height: 800px;
+}
+.about__headline {
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+.about__description {
+  font-size: 14px;
+  width: 600px;
+}
+.about__description > p {
+  margin-bottom: 40px;
+  line-height: 1.7rem;
+}
+
+.company {
+  width: 1360px;
+  max-width: 100%;
+  padding: 0 40px 0;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+.company__headline {
+  font-size: 14px;
+  margin-bottom: 55px;
+}
+.company__description {
+  font-size: 14px;
+}
+.company__map > iframe {
+  filter: grayscale(100%);
+}
+
+.company-detail > dt {
+  display: inline-block;
+}
+.company-detail > dd {
+  display: inline-block;
 }
 
 .footer {
