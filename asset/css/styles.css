@@ -232,7 +232,7 @@
   padding: 0 40px 0;
   margin: 0 auto;
   margin-top: 120px;
-  height: 800px;
+  height: 640px;
 }
 .about__headline {
   font-size: 14px;
@@ -241,6 +241,7 @@
 .about__description {
   font-size: 14px;
   width: 600px;
+  max-width: 98%;
 }
 .about__description > p {
   margin-bottom: 40px;
@@ -253,6 +254,7 @@
   padding: 0 40px 0;
   margin: 0 auto;
   margin-top: 120px;
+  margin-bottom: 120px;
 }
 .company__headline {
   font-size: 14px;
@@ -263,15 +265,41 @@
 }
 .company__map > iframe {
   filter: grayscale(100%);
+  width: 610px;
+  max-width: 98%;
+  height: 300px;
 }
 
-.company-detail > dt {
-  display: inline-block;
+.company-detail {
+  margin-left: 10px;
+  margin-bottom: 40px;
+  width: 600px;
+  max-width: 98%;
 }
-.company-detail > dd {
-  display: inline-block;
+.company-detail tr {
+  line-height: 60px;
+}
+.company-detail tr + tr {
+  border-top: 1px solid rgb(220, 219, 219);
+}
+.company-detail tr:last-child > td {
+  line-height: 15px;
+  padding-top: 20px;
+}
+.company-detail th {
+  font-weight: normal;
+  width: 180px;
 }
 
+@media (max-width: 900px) {
+  .company-detail tr {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+}
 .footer {
   height: 40px;
   width: 100%;
