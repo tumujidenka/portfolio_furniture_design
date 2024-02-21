@@ -1,0 +1,23 @@
+@use '../var';
+
+.nav-menu{
+    color:white;
+    padding-left: 10px;
+    transform: translateX(-100px);
+    transition:transform 0.5s;
+    &__title{
+        display: block;
+        margin-bottom: 20px;
+        font-size: var.$fontSize_M;
+    }
+    &__title>a{
+        transition:opacity .3s;
+    }
+    &__title>a:hover{
+        opacity: var.$common_opacity;
+    }
+
+}
+.nav-menu.active{
+    transform:translateX(0);
+}

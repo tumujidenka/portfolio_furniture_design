@@ -1,0 +1,28 @@
+@use '../var';
+
+.pages{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    margin-bottom: 13
+    0px;
+    &>li:nth-child(1){
+        margin-right: 20px;
+        text-align: center;
+    }
+    &>li:nth-child(2){
+        margin-left: 20px;            
+        text-align: center;
+    }
+    &__page{
+        font-size: var.$fontSize_M;
+        font-weight: normal;
+        &>a{
+            transition:opacity .3s;
+        }
+        &>a:hover{
+            opacity: var.$common_opacity;
+        }
+    }
+
+}

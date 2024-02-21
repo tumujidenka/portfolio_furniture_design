@@ -1,0 +1,30 @@
+@use '../mixin';
+@use '../var';
+
+.product{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    &__headline{
+        @include mixin.contents_width;
+        font-size: var.$fontSize_M;
+        margin-bottom: 35px;
+    }
+    &__pagination{
+        @include mixin.contents_width;
+    }
+}
+.product--product2{
+    margin-top: 120px;
+    margin-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    &__headline{
+        @include mixin.contents_width;
+        font-size: var.$fontSize_M;
+        margin-bottom: 35px;
+    }
+    &__pagination{
+        @include mixin.contents_width;
+    }
+}

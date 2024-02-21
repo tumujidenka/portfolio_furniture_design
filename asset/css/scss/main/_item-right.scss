@@ -1,0 +1,39 @@
+@use '../var';
+
+.item-right{
+    margin-left: 60px;
+    width: 340px;
+    font-size: var.$fontSize_M;
+    line-height: 20px;
+    p{
+        margin-bottom: 35px;
+    }
+
+    &__price{
+        margin-bottom: 30px;
+    }
+
+    &__supplement{
+        th{
+            font-weight: normal;
+            width: 100px;
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .item-right{
+        margin: 0;
+        width: 100%;
+        &__description{
+            margin-top: 35px;
+        }
+        table{
+            width: 100%;
+        }
+        tr{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+}

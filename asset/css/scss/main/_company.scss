@@ -1,0 +1,24 @@
+@use '../mixin';
+@use '../var';
+
+.company{
+    @include mixin.contents_width;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    &__headline{
+        font-size: var.$fontSize_M;
+        margin-bottom: 55px;
+    }
+    &__description{
+        font-size: var.$fontSize_M;
+    }
+    &__map{
+        &>iframe{
+            filter: grayscale(100%);
+            width: 610px;
+            max-width: 98%;
+            height: 300px;
+        }
+    }
+
+}

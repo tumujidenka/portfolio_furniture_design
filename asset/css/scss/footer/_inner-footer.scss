@@ -1,0 +1,33 @@
+@use '../mixin';
+@use '../var';
+
+.inner-footer{
+    @include mixin.contents_width;
+    height:40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__sns-link{
+        font-size:var.$fontSize_S ;
+        display: flex;
+        justify-content: space-around;
+        &--link{
+            margin-right: 30px;
+        }
+    }
+
+    &__copyright{
+        font-size: var.$fontSize_SS;
+    }    
+}
+
+@media (max-width:900px) {
+    .inner-footer{
+        flex-direction: column;
+        align-items: start;
+        justify-content: flex-start;
+        &__sns-link{
+            margin-bottom: 10px;
+        }
+    }
+}

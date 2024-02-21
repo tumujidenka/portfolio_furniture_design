@@ -1,0 +1,13 @@
+@use '../var';
+
+.main{
+    margin-top: 80px;
+
+    &__viewmore{
+        display: block;
+        padding-top: 45px;
+        text-align: center;
+        height:190px;
+        font-size:var.$fontSize_M ;
+    }
+}

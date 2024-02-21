@@ -1,0 +1,38 @@
+
+
+.company-detail{
+    margin-left: 10px;
+    margin-bottom: 40px;
+    width:600px;
+    max-width:98%;
+
+    & tr{
+        line-height: 60px;
+    }
+
+    & tr+tr{
+        border-top:1px solid rgb(220,219,219);
+    }
+
+    & tr:last-child>td{
+        line-height: 15px;
+        padding-top:20px;
+    }
+
+    & th{
+        font-weight: normal;
+        width: 180px;
+    }
+}
+
+@media (max-width:900px) {
+    .company-detail{
+        & tr{
+            display: flex;
+            flex-direction: column;
+            line-height: 30px;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+    }
+}

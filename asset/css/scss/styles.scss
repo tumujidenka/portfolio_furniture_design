@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@use 'var';
+@use 'mixin'; 
+ 
+@use 'header/header';
+@use 'header/inner-header';
+@use 'navigation/navigation';
+@use 'navigation/inner-navigation';
+@use 'navigation/nav-menu';
+
+@use 'main/contents';
+@use 'main/inner-main';
+@use 'main/main';
+@use 'main/product';
+@use 'main/pages';
+@use 'main/about';
+@use 'main/company';
+@use 'main/company-detail';
+@use 'main/item-detail';
+@use 'main/item-right';
+
+@use 'footer/footer';
+@use 'footer/inner-footer';
+
+JSとしてはハンバーガーメニュー/スライダー/ふわっと表示する/スムーススクロール

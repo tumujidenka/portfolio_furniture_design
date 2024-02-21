@@ -1,0 +1,19 @@
+@use 'var';
+@mixin contents_width{
+    width:var.$max_page_width;
+    max-width: 100%;
+    padding: 0 var.$common_padding 0; 
+    margin: 0 auto;   
+}
+
+@mixin hamburger_line{
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color:var.$text_color;
+    left:50%;
+    transform:translateX(-50%);
+    border-radius: 30px;
+    transition: 0.4s ease-in-out;
+}

@@ -1,0 +1,33 @@
+@use '../var';
+
+.contents{
+    overflow: hidden;//imgのせいでがはみ出ることがなくなる。
+    transition:opacity .4s;
+    &__figcontainer{
+        width: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+        }
+    }
+
+    &__description{
+        margin-top: 10px;
+        font-size: var.$fontSize_S;
+        line-height: 20px;
+    }
+}
+
+.contents:hover{
+    opacity: var.$common_opacity;
+}
+
+
+@media (max-width:900px) {
+    .contents{
+        &__figcontainer{
+            line-height: normal;
+        }
+    }
+}

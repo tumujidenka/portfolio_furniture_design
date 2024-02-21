@@ -1,0 +1,50 @@
+@use '../mixin';
+@use '../var';
+
+.inner-header{
+    @include mixin.contents_width();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    &__logo{
+        line-height: 80px;
+        height: 80px;
+        width:180px;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        transition:opacity .3s;
+    }
+    &__logo:hover{
+        opacity: var.$common_opacity;
+    }
+    
+    &__hamburger-menu{
+        display: block;
+        width: 30px;
+        height:30px;
+        cursor: pointer;
+        position: relative;
+        z-index:2;
+        &--upper-line{
+            @include mixin.hamburger_line();
+            top:10px;
+        }
+        &--lower-line{
+            @include mixin.hamburger_line();
+            bottom:10px;
+        }
+    }
+    &__hamburger-menu.active{
+        opacity: 0.7;
+        .inner-header__hamburger-menu--upper-line{
+            background-color: white;
+            transform:translate(-20px,4px) rotate(45deg);
+        }
+        .inner-header__hamburger-menu--lower-line{
+            transform:translate(-20px,-4px) rotate(-45deg);            
+            background-color: white;
+        }
+    }
+}

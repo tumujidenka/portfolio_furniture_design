@@ -1,0 +1,9 @@
+@use '../mixin';
+
+.inner-navigation{
+    padding-top:40px;
+    &__menu{
+        @include mixin.contents_width;
+        width: 100%;
+    }
+}
